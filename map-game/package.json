@@ -8,13 +8,16 @@
   },
   "devDependencies": {
     "babel-jest": "^20.0.3",
+    "enzyme": "^2.8.2",
+    "react-addons-test-utils": "^15.6.0",
     "react-scripts": "1.0.7",
+    "react-test-renderer": "^15.6.1",
     "regenerator-runtime": "^0.10.5"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test --env=jsdom --coverage --notify --watch",
     "eject": "react-scripts eject"
   }
 }
