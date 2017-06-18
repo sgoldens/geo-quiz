@@ -4,7 +4,7 @@
 
 ## Running a local dev build
 
-  Until publically deployed, you can follow these directions in a terminal window to run a local development build:
+  Until deployed, you can follow these directions in a terminal window to run a local development build:
 
 ```
 git clone https://github.com/sgoldens/geo-quiz
