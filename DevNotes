@@ -1,0 +1,22 @@
+Development Notes:
+
+June 18, 2017
+
+Day 1 - MVP for Geo Quiz
+
+- Using create-react-app as a base instead of KrakenJS, because my focus is more on React than what is required in configuration and adaptation to KrakenJS to use Jest and React without issues in possible browser compatibility and Universality, so KrakenJS would take more time to make a prototype (less than a week)
+  - It might be possible, but it's a risk I don't want to take since confidence in making this work in time w/ quality clean code is already low (~45%)
+
+- Jest TDD will be a goal in dev process
+
+  - Wireframe is simple enough to bypass in favor of test cases:
+     - index loads
+     - index displays welcome/title message
+     - page with Google Maps geographic border displayed
+     - selection of five possible answers displayed
+     - selecting one of five possible answers is possible
+     - selecting the right answer displays a success message
+     - selecting any wrong answer displays a failure message
+
+
+     
