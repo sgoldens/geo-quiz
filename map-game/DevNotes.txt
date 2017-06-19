@@ -17,3 +17,7 @@ Day 1 - MVP for Geo Quiz
      - selecting one of five possible answers is possible
      - selecting the right answer displays a success message
      - selecting any wrong answer displays a failure message
+
+June 19, 2017
+
+x Displays Google Map inside a ReactJS component
