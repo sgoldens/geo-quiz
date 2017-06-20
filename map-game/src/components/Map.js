@@ -1,11 +1,14 @@
 import React, { Component } from "react";
 import { withGoogleMap, GoogleMap } from "react-google-maps";
 
+import mapStyles from "./mapStyles.json";
+
 const GeoGoogleMap = withGoogleMap(props => (
   <GoogleMap
     ref={props.onMapLoad}
-    defaultZoom={3}
-    defaultCenter={{ lat: 38.4758956, lng: -105.9172295 }}
+    defaultZoom={2}
+    defaultCenter={{ lat: 42.4242424, lng: -42.4242424 }}
+    defaultOptions={{ styles: mapStyles }}
     onClick={props.onMapClick}
   >
   </GoogleMap>
@@ -35,9 +38,7 @@ export default class Map extends Component {
     return (
       <div style={{height: `500px`}}>
         <GeoGoogleMap
-          containerElement={<div style={{ height: `100%`
-          /* */
-          }} />}
+          containerElement={<div style={{  height: `100%` }} />}
           mapElement={<div style={{ height: `100%` }} />}
           onMapLoad={this.handleMapLoad}
         />
