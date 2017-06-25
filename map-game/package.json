@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "immutability-helper": "^2.2.2",
     "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
+    "react-addons-update": "^15.6.0",
     "react-dom": "^15.6.1",
     "react-google-maps": "^6.3.0"
   },
