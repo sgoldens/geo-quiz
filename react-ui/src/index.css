@@ -102,7 +102,7 @@ body {
   transition: all 0.3s;
 }
 
-.radioCustomButton:checked ~ .radioCustomLabel:before {
+.radioCustomButton:checked + .radioCustomLabel:before {
   content: '';
   background: #8BC53F url(./svg/icon-check.svg) no-repeat;
   background-size: 27px;

@@ -27,19 +27,19 @@ export const quizQuestion = [
           content: correctRandomCountriesArray[0][3]
         },
         {
-          type: incorrect,
+          type: incorrect+'1',
           content:COUNTRIES[getRandomInt(0,244)][3]
         },
         {
-          type: incorrect,
+          type: incorrect+"2",
           content:COUNTRIES[getRandomInt(0,244)][3]
         },
         {
-          type: incorrect,
+          type: incorrect+"3",
           content:COUNTRIES[getRandomInt(0,244)][3]
         },
         {
-            type: incorrect,
+            type: incorrect+"4",
             content:COUNTRIES[getRandomInt(0,244)][3]
         }
       ]

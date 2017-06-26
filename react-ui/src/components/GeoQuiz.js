@@ -28,10 +28,12 @@ function GeoQuiz(props) {
       transitionAppear
       transitionAppearTimeout={500}
     >
-      <Question content={props.question} />
-      <ul className="answerOptions">
-        {props.answerOptions.map(renderAnswerOptions)}
-      </ul>
+      <div key={props.questionId}>
+        <Question content={props.question} />
+        <ul className="answerOptions">
+          {props.answerOptions.map(renderAnswerOptions)}
+        </ul>
+      </div>
     </ReactCSSTransitionGroup>
   );
 

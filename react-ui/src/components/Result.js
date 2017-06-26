@@ -16,7 +16,10 @@ function Result(props) {
       <div>
         You are <strong>{props.quizResult}</strong>!
         <p>
-          {props.randomCountryName}
+          It was <strong>{props.randomCountryName}</strong>
+        </p>
+        <p>
+          <span id="loading">Loading next round...</span>
         </p>
       </div>
     </ReactCSSTransitionGroup>

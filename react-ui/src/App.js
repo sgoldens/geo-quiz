@@ -24,7 +24,10 @@ class App extends Component {
         answer: '',
         answersCount: {
           correct: 0,
-          incorrect: 0
+          incorrect1: 0,
+          incorrect2: 0,
+          incorrect3: 0,
+          incorrect4: 0
         },
         result: ''
       };
@@ -101,8 +104,10 @@ class App extends Component {
 
 
     setResults(result) {
+      console.log("result")
+      console.log(result)
       if (result.length === 1) {
-        this.setState({ result: result[0], styles: withoutLabels });
+        this.setState({ result: result === 'correct' ? 'correct' : 'incorrect', styles: withoutLabels });
 
       } else {
         this.setState({ result: 'Undetermined' });
@@ -143,6 +148,7 @@ class App extends Component {
             <Result
               quizResult={this.state.result}
               randomCountryName={this.state.randomCountryName}
+              reload={setTimeout(() => window.location.href = window.location.href, 2500)}
             />
           </div>
         </div>
