@@ -1,0 +1,23 @@
+Development Notes:
+
+June 18, 2017
+
+Day 1 - MVP for Geo Quiz
+
+- Using create-react-app instead of KrakenJS, because my focus is more on React than what is required in configuration and adaptation to an Enterprise level framework like KrakenJS, to use Jest and React more easily via config, browser compatibility and Universality. KrakenJS would take more time to make a prototype for this small project.
+  - It might be possible, but it's a risk I don't want to take since confidence in making this work in time w/ quality clean code is starting at ~45%
+
+- Jest (with Enyzme) TDD will be a goal in dev process
+
+  - Wireframe is simple enough to bypass, in favor of test cases to drive prototyping:
+     x GeoQuiz component loads
+     x GeoQuiz displays welcome/title message
+     - GeoQuiz displays component: Google Maps geographic border
+     - selection of five possible answers displayed
+     - selecting one of five possible answers is possible
+     - selecting the right answer displays a success message
+     - selecting any wrong answer displays a failure message
+
+June 19, 2017
+
+x Displays Google Map inside a ReactJS component
