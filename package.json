@@ -1,7 +1,8 @@
 {
-  "name": "map-game",
-  "version": "0.1.0",
-  "private": true,
+  "name": "geo-quiz",
+  "version": "1.0.0",
+  "private": false,
+  "homepage" : "http://sgoldens.github.io/geo-quiz",
   "dependencies": {
     "immutability-helper": "^2.2.2",
     "react": "^15.6.1",
