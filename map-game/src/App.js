@@ -8,8 +8,6 @@ import { correctRandomCountriesArray, quizQuestion } from './api/quizQuestion';
 import withLabels from "./components/mapStylesWithLabels.json";
 import withoutLabels from "./components/mapStylesWithoutLabels.json";
 
-
-
 class App extends Component {
 
     constructor(props) {
@@ -104,7 +102,8 @@ class App extends Component {
 
     setResults(result) {
       if (result.length === 1) {
-        this.setState({ result: result[0] });
+        this.setState({ result: result[0], styles: withoutLabels });
+
       } else {
         this.setState({ result: 'Undetermined' });
       }
@@ -135,13 +134,18 @@ class App extends Component {
     renderResult() {
       return (
         <div>
-          <Map
-            counter={this.state.counter}
-            randomCountryLatLong={this.state.randomCountryLatLong}
-            randomCountryName={this.state.randomCountryName}
-            defaultOptions={{ styles: withLabels }}
-          />
-          <Result quizResult={this.state.result} />
+          <div>
+            <Map
+              counter={this.state.counter}
+              randomCountryLatLong={this.state.randomCountryLatLong}
+              randomCountryName={this.state.randomCountryName}
+              defaultOptions={{ styles: withLabels }}
+            />
+            <Result
+              quizResult={this.state.result}
+              randomCountryName={this.state.randomCountryName}
+            />
+          </div>
         </div>
       );
     }

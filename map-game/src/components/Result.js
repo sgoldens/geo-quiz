@@ -15,6 +15,9 @@ function Result(props) {
     >
       <div>
         You are <strong>{props.quizResult}</strong>!
+        <p>
+          {props.randomCountryName}
+        </p>
       </div>
     </ReactCSSTransitionGroup>
   );
