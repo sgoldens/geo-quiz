@@ -1,28 +1,30 @@
 {
-  "name": "geo-quiz",
+  "name": "geo-border-quiz",
   "version": "1.0.0",
-  "private": false,
-  "homepage" : "http://sgoldens.github.io/geo-quiz",
-  "dependencies": {
-    "immutability-helper": "^2.2.2",
-    "react": "^15.6.1",
-    "react-addons-css-transition-group": "^15.6.0",
-    "react-addons-update": "^15.6.0",
-    "react-dom": "^15.6.1",
-    "react-google-maps": "^6.3.0",
-    "react-scripts": "1.0.7"
-  },
-  "devDependencies": {
-    "babel-jest": "^20.0.3",
-    "enzyme": "^2.8.2",
-    "react-addons-test-utils": "^15.6.0",
-    "react-test-renderer": "^15.6.1",
-    "regenerator-runtime": "^0.10.5"
+  "engines": {
+    "node": "6.9.x"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom --coverage --notify --watchAll",
-    "eject": "react-scripts eject"
-  }
+    "start": "node server",
+    "heroku-postbuild": "cd react-ui/ && npm install --only=dev && npm install && npm run build"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "react-ui/node_modules"
+  ],
+  "dependencies": {
+    "express": "^4.14.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sgoldens/geo-quiz.git"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "create-react-app",
+    "react"
+  ],
+  "license": "MIT",
+  "devDependencies": {}
 }
