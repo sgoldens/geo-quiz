@@ -8,7 +8,7 @@
 
 ```
 git clone https://github.com/sgoldens/geo-quiz
-cd geo-quiz/map-game
+cd geo-quiz
 npm install
 npm start
 ```
