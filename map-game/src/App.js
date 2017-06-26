@@ -130,7 +130,6 @@ class App extends Component {
       );
     }
 
-    /* TODO: Get Map component to re-render for renderResults so the withLabels view shows with results */
     renderResult() {
       return (
         <div>
