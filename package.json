@@ -23,7 +23,6 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom --coverage --notify --watchAll",
-    "eject": "react-scripts eject",
-    "postinstall": "npm install --only=dev && npm install && npm run build; fi"
+    "eject": "react-scripts eject"
   }
 }
