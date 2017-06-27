@@ -105,7 +105,7 @@ class App extends Component {
 
     setResults(result) {
       if (result.length === 1) {
-        this.setState({ result: result[0] === "correct" ? 'correct' : 'incorrect', styles: withoutLabels });
+        this.setState({ result: result[0] === "correct" ? 'correct' : 'incorrect'});
 
       } else {
         this.setState({ result: 'Undetermined' });
