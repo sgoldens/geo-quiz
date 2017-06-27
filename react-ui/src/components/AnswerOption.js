@@ -2,7 +2,7 @@ import React from 'react';
 
 function AnswerOption(props) {
   return (
-    <li className="answerOption">
+    <ul className="answerOption">
       <input
         type="radio"
         className="radioCustomButton"
@@ -16,7 +16,7 @@ function AnswerOption(props) {
       <label className="radioCustomLabel" htmlFor={props.answerType}>
         {props.answerContent}
       </label>
-    </li>
+    </ul>
   );
 }
 
