@@ -7,6 +7,11 @@ import Result from './components/Result';
 import { correctRandomCountriesArray, quizQuestion } from './api/quizQuestion';
 import withLabels from "./components/mapStylesWithLabels.json";
 import withoutLabels from "./components/mapStylesWithoutLabels.json";
+import FacebookLogin from 'react-facebook-login';
+
+const responseFacebook = (response) => {
+  console.log(response);
+}
 
 class App extends Component {
 
@@ -136,6 +141,12 @@ class App extends Component {
     renderResult() {
       return (
         <div>
+        <FacebookLogin
+          appId="472593976466238"
+          autoLoad={true}
+          fields="name,email,picture"
+          callback={responseFacebook}
+        />
           <div>
             <Map
               counter={this.state.counter}
