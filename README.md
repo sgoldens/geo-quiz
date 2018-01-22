@@ -1,6 +1,6 @@
 # Geographic Border Quiz
 
-  A simple game to identify Geographic Borders  -  [Live Demo](https://geo-quiz.herokuapp.com/)
+  A simple game to identify Geographic Borders  -  [Live Demo](http://sashagoldenson.com/#geo-quiz)
 
 ## Running a local dev build (requires node, npm & git) 
 
