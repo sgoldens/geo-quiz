@@ -2,11 +2,11 @@
   "name": "geo-border-quiz",
   "version": "1.0.0",
   "engines": {
-    "node": "6.9.x"
+    "node": "14.15.x"
   },
   "scripts": {
     "start": "node server",
-    "heroku-postbuild": "cd react-ui/ && npm install --only=dev && npm install && npm run build"
+    "heroku-postbuild": "cd react-ui/ && npm install && npm run build"
   },
   "cacheDirectories": [
     "node_modules",

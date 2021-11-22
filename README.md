@@ -2,7 +2,7 @@
 
   A simple game to identify Geographic Borders  -  [Live Demo](http://sashagoldenson.com/#geo-quiz)
 
-## Running a local dev build (requires node, npm & git) 
+## Running a local dev build (requires node, npm & git)
 
   You can follow these directions in a terminal window to run a local development build
   
